@@ -1,0 +1,301 @@
+@import "variable";
+
+.container {
+    width: 90rem;
+    height: 48rem;
+    border: 0.06rem solid $light-grey;
+    margin: auto;
+
+.left-sidebar {
+    width: 13.5rem;
+    height: 48rem;
+    float: left;
+   // border: 1px solid $red;
+    background-color: $blur-grey;
+    .company-name {
+        height: 3.5rem;
+      //  border: 1px solid yellow;
+        padding: 1rem 6.5rem 0 1.5rem;;
+        text-align: left;
+        box-sizing: border-box;
+        span {
+            text-transform: uppercase; 
+            font-size: $font-16 + 0.25rem;
+            font-family: ".SF NS Display";
+         }
+         .codi {
+             color:$light-blue;
+         }
+         .tas {
+             color:$grey;
+         }
+    }
+
+    .profile {
+        width: 13.5rem;
+        height: 4.5rem;
+        padding-left: $padding-left-24;
+       // border: 1px solid blue;
+        box-sizing: border-box;
+        display: flex;
+          .users-dp img {
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 1.25rem;
+        }
+        .users-name {
+            padding-left: 0.93rem;
+            color:$dark-blue;
+            font-family: $font;
+            font-size: $font-16;	
+            line-height: $line-height-19 + 0.06rem;
+        }
+        span {
+            font-size: $font-16 - 0.25rem;
+            display: block;
+            font-family: $font;	
+        }
+    }
+    
+    .add-button{
+        button {
+            height: 2.8rem;
+            width: 10.5rem;
+            margin-left: $margin-left-24;
+            color: $white;
+            font-size: $font-16;
+            font-weight: bold;
+            background-color: $primary-color;
+            border-radius: 0.18rem;
+            border-style: none !important;
+        }
+    }
+    
+    .menu-title {
+        margin-top:2.18rem; 
+        span {
+            font-size: $font-16 - 0.12rem ;
+            text-transform: uppercase; 
+            color: $light-grey;
+            font-family: $font;
+            font-weight: bold;
+            line-height: $line-height-19 - 0.18rem;
+            padding-left: $padding-left-24;
+        }
+    }
+
+    .menu-list {
+        ul {
+            padding: 0px;
+            margin-left: $margin-left-24;
+            li {
+                list-style-type:none;
+                color: $dark-blue;	
+                font-family: $font;	
+                font-size: $font-16;	
+                font-weight: 300;	
+                line-height: $line-height-19;
+                margin-top: 2rem;
+
+                &.active {
+                    color: $primary-color;
+                    font-weight: bold;
+                }
+                
+                &.notifications {
+                    span {
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        background-color: $crimson;
+                        padding: 0.12rem;
+                        border-radius: 0.25rem;
+                        float: right;
+                        margin-right: 1.3rem;
+                        font-size: $font-16 - 0.18rem;
+                        color: $white;
+                    }
+                }
+            }
+        } 
+    }
+    .logout {
+        margin-top: 15.4rem;
+        margin-left: $margin-left-24;
+        span {
+            font-family: $font;	
+            font-size: $font-16;	
+            font-weight: 300;	
+            line-height: $line-height-19;
+           
+        }	                
+    }
+    
+ }
+
+ .project {
+    width: 76.37rem;
+    height: 48rem;
+  //  border: 1px solid purple;
+    float: right;
+    position: absolute;
+    display: inline-flex;
+    
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        width: 72.5rem;
+        height: 37.5rem;
+      //  border: 1px solid yellow;
+        margin: 2.5rem 1.25rem 0rem 3.12rem;  
+        .project-head {
+           .project-title {
+            float:left;
+         //   border: 1px solid #000000;
+            color: $gray;	
+            font-family: $font;
+            font-size: $font-16 + 0.25rem + 0.25rem;	
+           }
+           .project-category {
+            float:right;
+            display: inline-flex;
+            img {             
+                width: 1rem;              
+            }
+            .sort-project {
+                margin-right: 1.25rem;
+                button {
+                    background-color: $white;
+                    padding: 0.62rem 0.93rem;
+                    border-radius: 0.18rem;
+                    &.my-project {
+                        border-left: 0.06rem solid $button-border;
+                        border-top: 0.06rem solid $button-border;
+                        border-bottom: 0.06rem solid $button-border;
+                        border-right: 0.06rem solid $button-border;
+                        color: $primary-color;
+                        font-weight: bold;
+                    }
+                    &.all-project {
+                        border-left: 0rem solid $button-border;
+                        border-top: 0.06rem solid $button-border;
+                        border-bottom: 0.06rem solid $button-border;
+                        border-right: 0.06rem solid $button-border;
+                        color: $grey;
+                    }
+              }
+            }
+            .project-icon {
+                margin-right: 1.25rem;
+                img {
+                    padding: 0.6rem;
+                    border: 0.06rem solid $button-border;
+                    border-radius: 0.18rem;
+                   // width: 20px;              
+                }
+              }
+
+              .project-search {
+                height: 2.12rem;
+                            
+                  form {
+                      input[type="text"] {
+                        border: 0.06rem solid $button-border;
+                        border-radius: 0.18rem; 
+                        height: 1.87rem;                   
+                        position: relative;
+                        left: 0.5rem;
+                    }
+                    ::placeholder {
+                        color:$light-grey;
+                        padding: 0.5rem;
+                    }
+                    img {                        
+                        width: 1.06rem;                      
+                        position: relative;
+                        right: 1rem;
+                        top: 0.3rem;
+                    }  
+                  }
+              }
+           }
+        }
+
+        .toggle {
+            span {
+                text-decoration: none;
+                color:$gray;
+                font-family: $font;
+                font-size: $font-16;
+                margin-right: 1rem;
+                cursor: pointer;
+                &.ongoing {
+                    color:$primary-color;
+                    border-bottom: 0.25rem solid $primary-color;
+                    }
+                &.complete {
+                    color:$primary-color;
+                    border-bottom: 0.25rem solid $primary-color;
+                }
+            }                      
+        }
+
+        .line {
+            border: 0.06rem solid $blur-grey;
+            width: 72.5rem;
+            margin-top: 0.25rem;
+        }
+
+        .all-project-cards {
+            #container-project-card {
+                display: flex;
+                flex-wrap: wrap;
+                .project-card {                
+                    height: 15.5rem;	
+                    width: 16.87rem;
+                    clear: both;
+                    padding: 1.5rem;
+                    margin: 0.75rem 0.43rem;
+                    border:0.06rem solid $blur-grey;	
+                    border-radius: 0.12rem;	
+                    background-color : $white;	
+                    box-shadow: 0 0.06rem 0.12rem 0 $light-bluish;
+                    box-sizing: border-box;
+                    font-family: $font;
+                    font-size: $font-16 + 0.25rem + 0.25rem;
+                    color: $dark-blue;
+                    .client, .start-date, .end-date {
+                        font-weight: bold;
+                    }
+                    span {
+                        font-size: $font-16 - 0.12rem;
+                    }
+                    .date {
+                        display: inline-flex;
+                        font-size: $font-16 - 0.12rem;
+                        font-family: $font;
+                        margin-top: 1.7rem;
+                        line-height: 1.56rem;
+                        .end-date {
+                            margin-left: 2.5rem;
+                        }
+                    }
+                    .team {
+                        margin-top: 1.5rem;
+                        h6 {
+                            font-size: 0.87rem;
+                            font-weight: normal;
+                            margin:0;
+                        }
+                        img {
+                            margin-top:0.3rem;
+                            width: 1.5rem;
+                        }
+                    }
+                }            
+            }
+        }
+        
+      }
+    }
+}
+

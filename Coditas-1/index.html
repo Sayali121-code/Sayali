@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coditas-1</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script>
+      function ongofunction() {
+          var a1 = document.getElementById("ongo");
+          a1.classList.toggle("ongoing");
+
+          var b1 = document.getElementById("oncomplete");
+          b1.classList.remove("complete");
+
+          var txt2 = document.getElementById("work-completed");
+          txt2.style.display="none";
+
+          var txt1 = document.getElementById("container-project-card");
+          txt1.style.display = "flex";
+      }
+
+      function oncompletefunction() {
+          var b1 = document.getElementById("oncomplete");
+          b1.classList.toggle("complete");
+
+          var a1 = document.getElementById("ongo");
+          a1.classList.remove("ongoing");
+
+          var txt1 = document.getElementById("container-project-card");
+          txt1.style.display="none";
+
+          var txt2 = document.getElementById("work-completed");
+          txt2.style.display = "flex";
+      }
+      
+  </script>
+</head>
+
+<body>
+    <div class="container">
+       <!-- start left sidebar -->
+        <div class="left-sidebar">
+            <div class="company-name">
+                <span class="codi">codi</span><span class="tas">tas</span>
+            </div>
+
+            <div class="profile">
+                <div class="users-dp">
+                    <img src="images/profile.jpeg"/> 
+                </div>
+               <div class="users-name">
+                   Mitul Bid <span>CEO</span>
+               </div>
+            </div>
+
+            <div class="add-button">
+                <button>
+                    + Add Project
+                </button>
+            </div>
+
+            <div class="menu-title">
+               <span>Menu</span>
+            </div>
+
+            <div class="menu-list">
+                <ul>
+                    <li>Dashboard</li>
+                    <li class="active">My Projects</li>
+                    <li>My Team</li>
+                    <li class="notifications">Notifications <span>14</span></li>
+                    <li>Settings</li>
+                </ul>
+            </div> 
+            <div class="logout">
+                <span>Logout</span>
+            </div>
+        </div>
+       <!-- end left sidebar -->
+      
+      <!-- start Project -->
+       <div class="project">
+          <div class="project-container">
+            <div class="project-head">
+                <!-- start left section of project -->
+                 <div class="project-title">Projects (7)</div>
+                <!-- end left section of project -->
+                
+                <!-- start right section of project -->
+                <div class="project-category">
+                    <div class="sort-project">
+                       <button class="my-project">My Project</button><button class="all-project"> All Project</button>
+                    </div>
+                   
+                    <div class="project-icon">
+                        <img src="images/menu.png" /><img src="images/list.png" />
+                    </div>
+
+                    <div class="project-search">
+                       <form>
+                           <input type="text" placeholder="Search by keyword..."/> <img src="images/search.png" />
+                       </form> 
+                    </div>
+
+                </div>    
+                <!-- end right section of project -->
+            </div>
+
+
+<!-- Start Toggle -->
+            <div class="toggle">
+                <span id="ongo" onclick="ongofunction()"> Ongoing </span>                              
+                <span id="oncomplete" onclick="oncompletefunction()"> Completed</span>
+            </div>
+
+            <div class="line"></div>
+<!-- End Toggle -->
+
+            <div class="all-project-cards">
+                <div id="work-completed"><h1>ALL DONE..!!!!</h1></div>
+                <div id="container-project-card">
+                    <div id= "project-card" class="project-card">
+                        <div>
+                            Basix <br />
+                            <span class="client">Client:</span><span> Jay Mount Elliot Millan</span>
+                        </div>
+                        
+                        <div class="date">
+                            <div class="start-date">
+                                <span>Start Date </span><br /> 10/12/2017
+                            </div>
+                            <div class="end-date">
+                                <span>End Date</span>  <br /> -  -  -
+                            </div>
+                        </div>
+        
+                        <div class="team">
+                            <h6>Team (4)</h6> 
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div>
+                            Basix <br />
+                            <span class="client">Client:</span><span> Jay Mount Elliot Millan</span>
+                        </div>
+                        
+                        <div class="date">
+                            <div class="start-date">
+                                <span>Start Date </span><br /> 10/12/2017
+                            </div>
+                            <div class="end-date">
+                                <span>End Date</span>  <br /> -  -  -
+                            </div>
+                        </div>
+        
+                        <div class="team">
+                            <h6>Team (4)</h6> 
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div>
+                            Basix <br />
+                            <span class="client">Client:</span><span> Jay Mount Elliot Millan</span>
+                        </div>
+                        
+                        <div class="date">
+                            <div class="start-date">
+                                <span>Start Date </span><br /> 10/12/2017
+                            </div>
+                            <div class="end-date">
+                                <span>End Date</span>  <br /> -  -  -
+                            </div>
+                        </div>
+        
+                        <div class="team">
+                            <h6>Team (4)</h6> 
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div>
+                            Basix <br />
+                            <span class="client">Client:</span><span> Jay Mount Elliot Millan</span>
+                        </div>
+                        
+                        <div class="date">
+                            <div class="start-date">
+                                <span>Start Date </span><br /> 10/12/2017
+                            </div>
+                            <div class="end-date">
+                                <span>End Date</span>  <br /> -  -  -
+                            </div>
+                        </div>
+        
+                        <div class="team">
+                            <h6>Team (4)</h6> 
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div>
+                            Basix <br />
+                            <span class="client">Client:</span><span> Jay Mount Elliot Millan</span>
+                        </div>
+                        
+                        <div class="date">
+                            <div class="start-date">
+                                <span>Start Date </span><br /> 10/12/2017
+                            </div>
+                            <div class="end-date">
+                                <span>End Date</span>  <br /> -  -  -
+                            </div>
+                        </div>
+        
+                        <div class="team">
+                            <h6>Team (4)</h6> 
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div>
+                            Basix <br />
+                            <span class="client">Client:</span><span> Jay Mount Elliot Millan</span>
+                        </div>
+                        
+                        <div class="date">
+                            <div class="start-date">
+                                <span>Start Date </span><br /> 10/12/2017
+                            </div>
+                            <div class="end-date">
+                                <span>End Date</span>  <br /> -  -  -
+                            </div>
+                        </div>
+        
+                        <div class="team">
+                            <h6>Team (4)</h6> 
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                            <img src="images/img.png" />
+                        </div>
+                    </div>
+                </div>
+    
+                </div>
+
+               
+           
+          </div> 
+       </div>
+      <!-- end Project -->
+      
+    </div>
+</div>
+  
+</body>
+</html>
